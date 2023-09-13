@@ -17,6 +17,7 @@ import {
     tictactoe,
     calci,
     todolist,
+    movies,
   } from "../assets";
   
   export const navLinks = [
@@ -161,6 +162,27 @@ import {
       ],
       image: wordpress,
       source_code_link: "https://codefree16.wordpress.com/",
+    },
+    {
+      name: "MovieLand",
+      description:
+        "Designed and developed a dynamic Movieland web application using React, offering users an immersive cinematic experience with real-time movie information.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "vscode",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: movies,
+      source_code_link: "https://github.com/Amruta-Reddy/movieland.git",
     },
     {
       name: "Tic-Tac-Toe",

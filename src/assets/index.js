@@ -22,6 +22,7 @@ import wordpress from "./wordpress.jpg";
 import tictactoe from "./tictactoe.png";
 import todolist from "./todolist.png";
 import calci from "./calci.png";
+import movies from "./movies.png";
 
 
 export {
@@ -47,5 +48,5 @@ export {
   tictactoe,
   todolist,
   calci,
-
+  movies,
 };
