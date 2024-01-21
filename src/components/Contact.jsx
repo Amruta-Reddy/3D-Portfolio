@@ -34,7 +34,10 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_j7gz65t','template_836cff6',
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Amruta",
@@ -42,7 +45,7 @@ const Contact = () => {
           to_email: "amrutareddy93@gmail.com",
           message: form.message,
         },
-        'cAnbRGn2llWoinQAl'
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -66,7 +69,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
